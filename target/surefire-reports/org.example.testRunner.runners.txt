@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: org.example.testRunner.runners
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 305.134 s <<< FAILURE! - in org.example.testRunner.runners
+org.example.testRunner.runners.runScenario["user could open product from first slider", "F13_HomeSliders - user could open product from sliders"](14)  Time elapsed: 11.308 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D13_HomeSlidersStepDef.first_slider_success(D13_HomeSlidersStepDef.java:26)
+	at ✽.slider opens first product(file:///D:/Automation/EcommerceApp/src/main/resources/features/F13_HomeSliders.feature:8)
+
+org.example.testRunner.runners.runScenario["user could open product from second slider", "F13_HomeSliders - user could open product from sliders"](15)  Time elapsed: 11.795 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D13_HomeSlidersStepDef.second_slider_success(D13_HomeSlidersStepDef.java:35)
+	at ✽.slider opens second product(file:///D:/Automation/EcommerceApp/src/main/resources/features/F13_HomeSliders.feature:13)
+
